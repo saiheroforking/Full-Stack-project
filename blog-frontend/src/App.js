@@ -6,15 +6,15 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import About from "./pages/About";
 import "./App.css";
-import AppHome from "./pages/AppHome";
+// import AppHome from "./pages/AppHome";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<AppHome />} />
-        <Route path="/home" element={<Home />} />
+        {/* <Route path="/" element={<AppHome />} /> */}
+        <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/about" element={<About />} />
