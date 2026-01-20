@@ -8,5 +8,4 @@ router.register(r'posts', PostViewSet)
 urlpatterns = [
     path('', include(router.urls)),   
     path('signup/', SignupView.as_view()),
-  
 ]
