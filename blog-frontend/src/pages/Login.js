@@ -23,11 +23,12 @@ function Login() {
             localStorage.setItem("token", res.data.access);
 
             // 5️⃣ Home page ki redirect
-            navigate("/");
+            navigate("/AppHome");
         } catch (error) {
             alert("Invalid username or password");
         }
     };
+    
 
     return (
         <div className="page">
